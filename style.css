@@ -31,11 +31,11 @@ body {
 }
 .show-btn {
   background-color: #079797;
-  padding: 8px 12px;
+  padding: 30px 40px;
   border-radius: 10px;
   transition: opacity 0.3s;
   &:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 .modal {

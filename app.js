@@ -23,7 +23,9 @@ overlay.addEventListener("click", () => {
 });
 cinfirmBtn.addEventListener("click", () => {
   addHidden();
-  alert("Your order has been recieved!");
+  numc.textContent = "0";
+  numa.textContent = "0";
+  alert(`Your order has been recieved!`);
 });
 document.addEventListener("keydown", (e) => {
   if (e.key == "Escape") {

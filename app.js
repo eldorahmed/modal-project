@@ -21,12 +21,7 @@ closeBtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   addHidden();
 });
-cinfirmBtn.addEventListener("click", () => {
-  addHidden();
-  numc.textContent = "0";
-  numa.textContent = "0";
-  alert(`Your order has been recieved!`);
-});
+
 document.addEventListener("keydown", (e) => {
   if (e.key == "Escape") {
     addHidden();
@@ -37,10 +32,17 @@ const imgCup = document.querySelector(".coffee-imgc");
 const imgAme = document.querySelector(".coffee-imga");
 const numc = document.querySelector(".numc");
 const numa = document.querySelector(".numa");
-
+let q1;
+let q2;
 imgCup.addEventListener("click", () => {
-  +numc.textContent++;
+  q1 = +numc.textContent++;
 });
 imgAme.addEventListener("click", () => {
-  +numa.textContent++;
+  q2 = +numa.textContent++;
+});
+cinfirmBtn.addEventListener("click", () => {
+  addHidden();
+  numc.textContent = "0";
+  numa.textContent = "0";
+  alert(`You ordered ${q1 + 1} capuccino and ${q2 + 1} americano! `);
 });

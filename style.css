@@ -23,6 +23,7 @@ body {
   display: none;
 }
 .btn {
+  cursor: pointer;
   border: 0;
   background-color: transparent;
   font-family: inherit;
@@ -99,6 +100,7 @@ body {
   text-align: center;
 }
 .coffee {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;

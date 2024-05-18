@@ -42,7 +42,7 @@ imgAme.addEventListener("click", () => {
 });
 cinfirmBtn.addEventListener("click", () => {
   addHidden();
+  alert(`You ordered ${q1 + 1} capuccino and ${q2 + 1} americano! `);
   numc.textContent = "0";
   numa.textContent = "0";
-  alert(`You ordered ${q1 + 1} capuccino and ${q2 + 1} americano! `);
 });
